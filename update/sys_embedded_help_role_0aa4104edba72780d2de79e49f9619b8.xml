@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_srete_rbt_broker.hist_rico_de_pap_is_user" name="x_srete_rbt_broker.hist_rico_de_pap_is_user">caa4104edba72780d2de79e49f9619b5</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>anderson.batista@aoop.com.br</sys_created_by>
+        <sys_created_on>2019-02-12 00:54:00</sys_created_on>
+        <sys_id>0aa4104edba72780d2de79e49f9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>caa4104edba72780d2de79e49f9619b5</sys_name>
+        <sys_package display_value="Robot Broker" source="x_srete_rbt_broker">0d925c8adba72780d2de79e49f9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Robot Broker">0d925c8adba72780d2de79e49f9619a5</sys_scope>
+        <sys_update_name>sys_embedded_help_role_0aa4104edba72780d2de79e49f9619b8</sys_update_name>
+        <sys_updated_by>anderson.batista@aoop.com.br</sys_updated_by>
+        <sys_updated_on>2019-02-12 00:54:00</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

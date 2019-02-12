@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="live_feed=true" label="Histórico de Papéis" max_length="40" name="x_srete_rbt_broker_history" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Ponto de Compra" max_length="40" name="u_compra" type="boolean"/>
+        <element label="Data Histórico" max_length="40" name="u_data_historico" type="glide_date"/>
+        <element label="Flutuação Fechamento" max_length="20" name="u_flutuacao_fechamento" type="decimal"/>
+        <element label="Flutuação Máxima" max_length="20" name="u_flutuacao_maxima" type="decimal"/>
+        <element label="Industria" max_length="100" name="u_industria" type="string"/>
+        <element label="Peso" max_length="40" name="u_peso" type="integer"/>
+        <element label="Preço de Abertura" max_length="20" name="u_preco_abertura" type="decimal"/>
+        <element label="Preço Fechamento" max_length="20" name="u_preco_fechamento" type="decimal"/>
+        <element label="Maior Preço" max_length="20" name="u_preco_maior" type="decimal"/>
+        <element label="Menor Preço" max_length="20" name="u_preco_menor" type="decimal"/>
+        <element label="Pressão" max_length="20" name="u_pressao" type="decimal"/>
+        <element label="Projetado Linear" max_length="20" name="u_projetado_linear" type="decimal"/>
+        <element label="Sigla" max_length="40" name="u_sigla" type="string"/>
+        <element label="Ponto de Venda" max_length="40" name="u_venda" type="boolean"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

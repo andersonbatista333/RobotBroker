@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Setup de Papéis" max_length="40" name="x_srete_rbt_broker_setup_paper" type="collection">
+        <element label="Budget" max_length="20" name="budget" type="decimal"/>
+        <element label="habilitado?" max_length="40" name="u_habilitado" type="boolean"/>
+        <element label="Industria" max_length="100" name="u_industria" type="string"/>
+        <element label="Peso" max_length="40" name="u_peso" type="integer"/>
+        <element label="Sigla" max_length="40" name="u_sigla" type="string"/>
+        <element label="Stop Loss" max_length="20" name="u_stop_loss" type="decimal"/>
+    </element>
+</database>

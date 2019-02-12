@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Papel Import" max_length="40" name="x_srete_rbt_broker_papel_imported" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Adj Close" max_length="40" name="u_adj_close" type="string"/>
+        <element attributes="import_attribute_name=Close,edge_encryption_enabled=true" label="Close" max_length="40" name="u_close" type="string"/>
+        <element attributes="import_attribute_name=Date,edge_encryption_enabled=true" label="Date" max_length="40" name="u_date" type="string"/>
+        <element attributes="import_attribute_name=High,edge_encryption_enabled=true" label="High" max_length="40" name="u_high" type="string"/>
+        <element attributes="import_attribute_name=Low,edge_encryption_enabled=true" label="Low" max_length="40" name="u_low" type="string"/>
+        <element attributes="import_attribute_name=Open,edge_encryption_enabled=true" label="Open" max_length="40" name="u_open" type="string"/>
+        <element attributes="import_attribute_name=Volume,edge_encryption_enabled=true" label="Volume" max_length="40" name="u_volume" type="string"/>
+    </element>
+</database>
