@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <map display_value="ETL Papel ">df5d5446dbe72780d2de79e49f96196f</map>
+        <order>10</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+	var fileName = "null";
+	
+	var dsid = source.sys_import_set.data_source.sys_id;
+	
+	var gr = new GlideRecord('sys_attachment');
+	
+	
+	gr.addQuery('table_name','sys_data_source');
+	
+	
+	gr.addQuery('table_sys_id',dsid);
+	
+	
+	gr.orderByDesc('sys_created_on');
+	
+	
+	gr.query();
+	
+	
+	if (gr.next()){
+		
+		fileName = gr.file_name.substring(1,5);
+		var grh = new GlideRecord('x_srete_rbt_broker_history');
+		grh.addQuery('u_sigla', fileName);
+		grh.query();
+	
+		grh.deleteMultiple();
+		
+	}
+	
+
+
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>anderson.batista@aoop.com.br</sys_created_by>
+        <sys_created_on>2019-02-12 06:03:28</sys_created_on>
+        <sys_id>bebad902dbeb2780d2de79e49f9619ec</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>onStart</sys_name>
+        <sys_package display_value="Robot Broker" source="x_srete_rbt_broker">0d925c8adba72780d2de79e49f9619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Robot Broker">0d925c8adba72780d2de79e49f9619a5</sys_scope>
+        <sys_update_name>sys_transform_script_bebad902dbeb2780d2de79e49f9619ec</sys_update_name>
+        <sys_updated_by>anderson.batista@aoop.com.br</sys_updated_by>
+        <sys_updated_on>2019-02-12 06:39:29</sys_updated_on>
+        <when>onStart</when>
+    </sys_transform_script>
+</record_update>
